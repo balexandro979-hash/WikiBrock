@@ -1,0 +1,32 @@
+/* Esto centra todo el documento */
+html{
+    text-align: center;
+}
+
+/* Este cambia el fondo*/
+body{
+    background-color: rgb(255 241 207);
+}
+
+/*Este alinea solamente el logo*/
+.logo{
+  text-align: left;  
+}
+
+/*Esto quita los puntos de la lista pero sigue siendo una lista a comparación
+de si le quitamos el "li",quita los puntos pero deja de ser una lista*/
+.menu {
+    list-style: none;
+    
+}
+
+/*Este acomoda el menú horizontalmente en vez de una lista*/
+.menu li {
+    display: inline;
+    margin-right: 50px;
+}
+
+/*Acá le añadimos un margen a toda la terjeta de una receta*/
+.card{
+    margin: 20px;
+}

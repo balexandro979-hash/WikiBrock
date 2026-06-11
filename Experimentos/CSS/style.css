@@ -1,0 +1,16 @@
+.encabezado{
+    color: rgb(248, 0, 0);
+}
+
+.menu li {
+    list-style: none;
+    display: flex;
+}
+
+/* Conviertes los items en elementos en línea */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
