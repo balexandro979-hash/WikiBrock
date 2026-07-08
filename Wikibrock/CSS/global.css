@@ -1,0 +1,624 @@
+/* =========================================
+   1. ESTILOS GLOBALES Y NAVEGACIÓN
+   ========================================= */
+body, html {
+    background-color: #FFF1CF;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header, .header, .navbar {
+    background-color: #B71C1C;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo {
+    color: white;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu a.activo {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+.menu a:hover {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 5px;
+}
+
+/* =========================================
+   2. BANNERS Y ENCABEZADOS (HERO)
+   ========================================= */
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('../imagenes/Imagen_BANNER_PRINCIPAL.webp');
+    background-size: cover;    
+    background-position: center; 
+    height: 320px;
+    padding: 0px 20px;             
+    color: white;            
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content h2, .contenido_hero h2 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.hero-content p, .contenido_hero p {
+    color: white;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+/* =========================================
+   3. BOTONES GLOBALES
+   ========================================= */
+.btn-recetas {
+    background: #2e7d32;
+    color: white;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 8px;
+    margin: 30px 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.volver, .boton {
+    background-color: #D62828;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 35px;
+    margin: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-recetas:hover, .card button:hover {
+    background-color: #6fbb73;
+    transform: scale(1.1);
+}
+
+.volver:hover, .boton:hover {
+    background-color: #B71C1C;
+    transform: scale(1.1);
+}
+
+.botones-categorias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.botones-categorias button {
+    background-color: #2e7d32; /* Verde original */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s; 
+}
+
+.botones-categorias, .filtros {
+    background-color: white;
+    padding: 15px 30px;
+    border-radius: 15px;
+    
+    /* La magia para que el fondo abrace a los botones y no estire */
+    width: fit-content; 
+    
+    /* Esto centra la caja blanca en medio de la pantalla */
+    margin: 20px auto;  
+    
+    /* Mantiene los botones ordenados en fila */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    
+    /* Una sombra sutil para que resalte del fondo crema */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05); 
+}
+
+.botones-categorias button:hover {
+    background-color: #6fbb73; /* Verde pálido */
+    transform: scale(1.1); 
+}
+
+/* =========================================
+   4. PANTALLA: CATEGORÍAS
+   ========================================= */
+.productos {
+    padding: 5%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.tarjeta {
+    position: relative; 
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;   
+    transition: transform 1s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.tarjeta:hover {
+    transform: scale(1.03);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.contenido_frontal {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1; 
+}
+
+.contenido_frontal .btn-recetas {
+    position: relative;
+    z-index: 10;
+}
+
+.tarjeta:hover .contenido_frontal img,
+.tarjeta:hover .contenido_frontal h2,
+.tarjeta:hover .contenido_frontal p {
+    opacity: 0; 
+}
+
+.contenido_oculto {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: white; 
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    
+    opacity: 0; 
+    visibility: hidden; 
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+    z-index: 5;
+    padding-bottom: 80px;
+}
+
+.contenido_frontal img,
+.contenido_frontal h2,
+.contenido_frontal p {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.tarjeta:hover .contenido_oculto {
+    opacity: 1; 
+    visibility: visible; 
+}
+
+/* =========================================
+   5. PANTALLA: RECETAS E INICIO
+   ========================================= */
+.seccion-recetas {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.filtros {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    text-align: center;
+}
+
+.filtros button {
+    background-color: #2e7d32;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 12px 40px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.filtros button:hover {
+    background-color: #6fbb73; 
+    transform: scale(1.1);
+}
+
+.contenedor-recetas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que las tarjetas bajen si la pantalla es muy pequeña */
+    gap: 30px;
+    margin: 30px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.contenedor-recetas .card {
+    width: 250px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+.card button {
+    background: #2E7D32;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* =========================================
+   6. PANTALLA: DETALLES DE RECETA
+   ========================================= */
+.TituloReceta {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('../imagenes/Imagen_BANNER_PRINCIPAL.webp');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 120px 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.contenedorPrincipal {
+    display: flex;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 30px;
+    max-width: 1200px;
+}
+
+.columnaIzquierda {
+    flex: 0 0 calc(35% - 15px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.columnaDerecha {
+    flex: 0 0 calc(65% - 15px);
+}
+
+.columna .contenedor-recetas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Fuerza 2 columnas exactamente iguales */
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.columna .card {
+    width: 100%;
+    box-sizing: border-box; /* Evita que el padding interno rompa el tamaño */
+}
+
+.tarjetaTacos, .tarjetaIngredientes, .tarjetaComentarios, .caja-carrusel, .tarjeta-comentario {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+.tarjetaSustituciones {
+    background-color: burlywood;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+}
+
+.tarjetaTacos img {
+    width: 100%;        
+    height: 220px;
+    object-fit: cover; 
+    border-radius: 5px;
+    text-align: center;
+}
+
+.pasosPreparacion {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px 40px;
+    text-align: left;
+}
+
+.fotos-comunidad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.fotos-comunidad img {
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-resena, .card-nombre, .card-escribir {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 15px;
+}
+
+.card-resena textarea, .card-nombre input, .card-escribir input {
+    width: 100%;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.btn-publicar {
+    background-color: rgb(181, 37, 37);
+    color: white;
+    border-radius: 6px;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* =========================================
+   7. PANTALLA: CONTACTO
+   ========================================= */
+.contacto {
+    margin: 40px;
+    text-align: center;
+}
+
+.info-contacto {
+    width: 40%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+
+.formulario {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+
+.info-contacto h2, .formulario h2 {
+    color: #B71C1C;
+}
+
+.formulario input, .formulario textarea {
+    width: 90%;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.formulario input:focus, .formulario textarea:focus {
+    border-color: #B71C1C;
+    outline: none;
+}
+
+.fila input {
+    width: 48%;
+    display: inline-block;
+}
+
+#cellphone, #m_correo {
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+}
+
+/* =========================================
+   8. PANTALLA: SOBRE NOSOTROS
+   ========================================= */
+.historia {
+    margin: 30px;
+    text-align: center;
+}
+
+.historia img {
+    width: 400px;
+    margin: 20px;
+    border-radius: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.texto-historia {
+    margin: 20px;
+    display: inline-block;
+    width: 500px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.texto-historia h2, .tarjetas h2 {
+    color: #B71C1C;
+}
+
+#texto {
+    background-color: #FFF5E6;
+    font-size: 20px;
+    color: #4E342E;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.corazon {
+    width: 50px;
+    margin-top: 15px; 
+}
+
+.tarjetas {
+    text-align: center;
+}
+
+.tarjetas .card {
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px;
+}
+
+/* =========================================
+   9. FOOTER GLOBAL
+   ========================================= */
+footer, .footer {
+    background-color: #2E2E2E;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* =========================================
+   10. MEDIA QUERIES (RESPONSIVIDAD)
+   ========================================= */
+/* Para Tablets (Pantallas medianas) */
+@media screen and (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contenedorPrincipal {
+        flex-direction: column;
+    }
+
+    .info-contacto, .formulario, .historia img, .texto-historia {
+        width: 90%;
+        display: block;
+        margin: 20px auto;
+    }
+}
+
+/* Para Celulares (Pantallas pequeñas) */
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .menu li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero-content h2, .contenido_hero h2 {
+        font-size: 35px;
+    }
+
+    .productos, .contenedor-recetas {
+        grid-template-columns: 1fr;
+    }
+
+    .seccion-recetas {
+        flex-direction: column;
+    }
+
+    .contenedor-recetas .card, .tarjetas .card {
+        width: 90%;
+    }
+
+    .fila input {
+        width: 100%;
+        display: block;
+    }
+}
