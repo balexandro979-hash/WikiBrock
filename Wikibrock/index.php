@@ -39,12 +39,12 @@
         <section class="categorias">
             <h2>Categorias</h2>
             <div class="botones-categorias">
-                <button onclick="aviso()">Platillos Mexicanos</button>
-                <button onclick="aviso()">Desayunos</button>
-                <button onclick="aviso()">Comidas</button>
-                <button onclick="aviso()">Cenas</button>
-                <button onclick="aviso()">Postres</button>
-                <button onclick="aviso()">Bebidas</button>
+                <button >Platillos Mexicanos</button>
+                <button >Desayunos</button>
+                <button >Comidas</button>
+                <button >Cenas</button>
+                <button >Postres</button>
+                <button >Bebidas</button>
 
             </div>
         </section>
