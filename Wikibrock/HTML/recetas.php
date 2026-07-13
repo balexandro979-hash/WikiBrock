@@ -4,7 +4,7 @@
         <title>WikiBrock | Recetas</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="../css/global.css" rel="stylesheet">
+        <link href="../CSS/global.css" rel="stylesheet">
     </head>
 
     <body>
@@ -49,28 +49,28 @@
                 <div class="contenedor-recetas">
 
                     <div class="card">
-                        <img src="https://st3.depositphotos.com/15238356/18346/i/450/depositphotos_183463784-stock-photo-tacos-pastor-lemon-mexican-spicy.jpg" alt="Tacos al Pastor">
+                        <img src="tacos_al_pastor.webp" alt="Tacos al Pastor">
                         <h3>Tacos al Pastor</h3>
                         <p>35 min | Intermedio</p>
                         <a href="detallestacos.php"> <button>Ver receta completa</button> </a>
                     </div>
 
                     <div class="card">
-                        <img src="https://st4.depositphotos.com/12847240/31601/i/450/depositphotos_316014688-stock-photo-chilaquiles.jpg" alt="Chilaquiles verdes">
+                        <img src="chilaquiles_verdes.webp" alt="Chilaquiles verdes">
                         <h3>Chilaquiles Verdes</h3>
                         <p>20 min | Fácil</p>
                         <a href="detalleschilaquiles.php"> <button>Ver receta completa</button> </a>
                     </div>
 
                     <div class="card">
-                        <img src="https://st4.depositphotos.com/2593537/20520/i/600/depositphotos_205202398-stock-photo-mexican-quesadilla-chicken-cheese-peppers.jpg" alt="Sincronizadas">
+                        <img src="sincronizadas.webp" alt="Sincronizadas">
                         <h3>Sincronizadas</h3>
                         <p>15 min | Fácil</p>
                         <a href="detallespozole.php"> <button>Ver receta completa</button> </a>
                     </div>
 
                     <div class="card">
-                        <img src="https://st4.depositphotos.com/15238356/20825/i/600/depositphotos_208259642-stock-photo-pozole-mexican-corn-soup-traditional.jpg" alt="Pozole">
+                        <img src="pozole.webp" alt="Pozole">
                         <h3>Pozole</h3>
                         <p>90 min | Avanzado</p>
                         <button onclick="atrapada()">Ver receta</button>

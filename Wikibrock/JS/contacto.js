@@ -36,16 +36,20 @@ function validarFormulario() {
     }
 
     if  (nombre != "" && texto != "" && correo.includes("@") && correo.includes(".") && celular.length == 10) {
-
         document.getElementById("mensaje").textContent = "Mensaje enviado correctamente";
         document.getElementById("mensaje").style.color = "green";
 
         document.getElementById("formContacto").submit();
-
     } else {
-
+        
         document.getElementById("mensaje").textContent = "Revise los datos ingresados";
         document.getElementById("mensaje").style.color = "red";
         
     }
+
+    fetch("../guardar.php", {
+        method: "POST",
+        body: datosFormulario
+    });
+
 }

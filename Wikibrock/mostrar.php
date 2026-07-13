@@ -7,11 +7,26 @@ $resultado = mysqli_query($conexion, $sql);
 ?>
 
 <html>
+    
     <head>
         <meta charset="UTF-8">
         <title>Usuarios registrados</title>
-        <link rel="stylsheet" href="css/global.css">
+        <link rel="stylesheet" href="CSS/global.css">
     </head>
+
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">WikiBrock</h1>
+            <ul class="menu">
+                <li><a href="index.php">Inicio</a></li>
+                <li><a href="HTML/recetas.php">Recetas</a></li>
+                <li><a href="HTML/categorias.php">Categorías</a></li>
+                <li><a href="HTML/sobrenosotros.php">Sobre nosotros</a></li>
+                <li><a href="HTML/contacto.php">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <body>
         <h2>Usuarios registrados</h2>
         <table border="1">
@@ -25,8 +40,6 @@ $resultado = mysqli_query($conexion, $sql);
                 <th>Eliminar</th>
 
             </tr>
-
-            <a href="index.php" class="Volver"> Volver</a>
 
             <?php while($fila = mysqli_fetch_assoc($resultado)) {?>
                 <tr>

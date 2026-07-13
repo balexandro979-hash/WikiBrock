@@ -98,6 +98,7 @@
                         <p id="mensaje"></p>
                     </form>    
                 </div>
+            </div>    
 
         </section>
 
@@ -105,6 +106,8 @@
             <a href="../index.php"><button class="volver">Volver</button>
             </a>
         </div>
+
+        
 
     </main>
 

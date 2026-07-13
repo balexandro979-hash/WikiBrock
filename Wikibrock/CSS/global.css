@@ -146,19 +146,15 @@ header, .header, .navbar {
     padding: 15px 30px;
     border-radius: 15px;
     
-    /* La magia para que el fondo abrace a los botones y no estire */
     width: fit-content; 
     
-    /* Esto centra la caja blanca en medio de la pantalla */
     margin: 20px auto;  
     
-    /* Mantiene los botones ordenados en fila */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
     
-    /* Una sombra sutil para que resalte del fondo crema */
     box-shadow: 0 2px 8px rgba(0,0,0,0.05); 
 }
 
@@ -547,13 +543,56 @@ header, .header, .navbar {
     vertical-align: top;
     margin: 20px;
 }
+
 /* =========================================
    9. PANTALLA: MOSTRAR
    ========================================= */
-
-
-
    
+table{
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th{
+    background-color: #B71C1C;
+    color: white;
+    padding: 12px;
+}
+
+td{
+    padding: 10px;
+    text-align: center;
+}
+
+tr:nth-child(even){
+    background-color: #F5F5F5;
+}
+
+tr:hover{
+    background-color: #FFE6C7;
+}
+
+.btn-editar,
+.btn-guardar,
+.Volver{
+    background-color: #D62828;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-editar:hover,
+.btn-guardar:hover,
+.Volver:hover{
+    background-color: #B71C1C;
+}
+
 /* =========================================
    10. FOOTER GLOBAL
    ========================================= */

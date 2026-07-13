@@ -1,8 +1,8 @@
 <?php
 $servidor = "localhost";
-$usuario = "root";
-$password = "";
-$baseDatos = "wikibrock";
+$usuario = "u558551429_proyectouqroo";
+$password = "qNG?fbe6!oT7";
+$baseDatos = "u558551429_wikibrok";
 
 $conexion = mysqli_connect(
     $servidor,

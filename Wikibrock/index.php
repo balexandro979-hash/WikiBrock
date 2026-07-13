@@ -4,7 +4,7 @@
         <title>WikiBrock</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/global.css" rel="stylesheet">
+        <link href="CSS/global.css" rel="stylesheet">
     </head>
 
     <body>
@@ -12,7 +12,7 @@
             <nav class="navbar">
                 <h1 class="logo">WikiBrock</h1>
                 <ul class="menu">
-                    <li><a href="index.html" class="activo">Inicio</a></li>
+                    <li><a href="index.php" class="activo">Inicio</a></li>
                     <li><a href="HTML/recetas.php">Recetas</a></li>
                     <li><a href="HTML/categorias.php">Categorías</a></li>
                     <li><a href="HTML/sobrenosotros.php">Sobre nosotros</a></li>

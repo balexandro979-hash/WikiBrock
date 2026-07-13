@@ -11,11 +11,11 @@
         <nav class="navbar">
             <h1 class="logo">WikiBrock</h1>
             <ul class="menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="recetas.html">Recetas</a></li>
-                <li><a href="categorias.html">Categorías</a></li>
-                <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="../index.php">Inicio</a></li>
+                <li><a href="recetas.php">Recetas</a></li>
+                <li><a href="categorias.php">Categorías</a></li>
+                <li><a href="sobrenosotros.php">Sobre nosotros</a></li>
+                <li><a href="contacto.php">Contacto</a></li>
             </ul>
         </nav>
         </header>
@@ -177,7 +177,7 @@
         <button class="btn-publicar">Publicar Comentario</button>  
         <br> <br>
         <div>
-            <a href="../index.html"><button class="volver">Volver</button></a>
+            <a href="../index.php"><button class="volver">Volver</button></a>
         </div>      
 
         <div class="footer">

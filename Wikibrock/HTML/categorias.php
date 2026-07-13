@@ -35,7 +35,7 @@
         <section class="productos">
             <article class="tarjeta">
                 <div class="contenido_frontal">
-                    <img src="https://media.istockphoto.com/id/498086717/es/foto/mexicana-taquitos-de-carne-casero.jpg?s=612x612&w=0&k=20&c=BbmRmDLU4WYvWezJr1mPiyRVNpcHgKpeXh0NnH8KZRA=" alt="platillos clásicos">
+                    <img src="platillos_clasicos.webp" alt="platillos clásicos">
                     <h2>Platillos mexicanos clasicos</h2> 
                     <p> Recetas populares 100% mexicanas</p>
                     <a href="" class="btn-recetas" onclick="aviso()"> VER TODAS LAS RECETAS </a> 
@@ -47,7 +47,7 @@
 
             <article class="tarjeta"> 
                 <div class="contenido_frontal">
-                    <img src="https://img.magnific.com/fotos-premium/mole-mexicano-ingredientes-mole-poblano-comida-picante-mexicana-tradicional-mexico_137422-9.jpg?semt=ais_hybrid&w=740&q=80" alt="Comidas">
+                    <img src="comidas.webp" alt="Comidas">
                     <h2>Comidas </h2> 
                     <p>Disfruta de almuerzos tradicionales </p>
                     <a href="" class="btn-recetas" onclick="aviso()"> VER TODAS LAS RECETAS </a>
@@ -59,7 +59,7 @@
 
             <article class="tarjeta">
                 <div class="contenido_frontal">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Multitud_de_churros.jpg" alt="Postres">
+                    <img src="postres.webp" alt="Postres">
                     <h2> Postres </h2>
                     <p> Sobrecomidas dulces y saladas </p>
                     <a href="" 
@@ -72,7 +72,7 @@
 
             <article class="tarjeta">
                 <div class="contenido_frontal">
-                    <img src="https://st3.depositphotos.com/1158384/14135/i/450/depositphotos_141358332-stock-photo-epiphany-cake-kings-cake-roscon.jpg" alt="Desayunos"> 
+                    <img src="desayuno.webp" alt="Desayunos"> 
                     <h2> Desayunos </h2>
                     <p> Desayunos mexicanos y algo mas </p>
                     <a href="" 
@@ -85,7 +85,7 @@
 
             <article class="tarjeta"> 
                 <div class="contenido_frontal">
-                    <img src="https://images.unsplash.com/photo-1618040996337-56904b7850b9?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cenas">
+                    <img src="cenas.webp" alt="Cenas">
                     <h2> Cenas </h2>
                     <p> Platillos mas ligeros para la hora nocturna </p>
                     <a href="" 
@@ -98,7 +98,7 @@
 
             <article class="tarjeta">
                 <div class="contenido_frontal">
-                    <img src="https://plus.unsplash.com/premium_photo-1750792812853-d20e5a2e0de7?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bebidas"> 
+                    <img src="bebidas.webp" alt="Bebidas"> 
                     <h2> Bebidas </h2>
                     <p> Brebaje tradicional con y sin alcohol </p>
                     <a href="" 
