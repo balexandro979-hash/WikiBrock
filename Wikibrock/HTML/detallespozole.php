@@ -30,7 +30,7 @@
         <main class="contenedorPrincipal">
             <aside class="columnaIzquierda">
                 <div class="tarjetaTacos">
-                    <img src="img/tacos-al-pastor.jpg" alt="Plato hondo con pozole rojo caliente y guarniciones" width="1200" height="800" loading="lazy">
+                    <img src="../imagenes/pozole.webp" alt="Plato hondo con pozole rojo caliente y guarniciones" width="1200" height="800" loading="lazy">
                     <h4>⏱ 180 min | ⭐ Medio | 💰 Medio</h4>
                 </div>
 
@@ -113,83 +113,84 @@
                 <div class="caja-carrusel">
                     <h3>ASÍ LE QUEDÓ A LA COMUNIDAD</h3>
                     <div class="fotos-comunidad">
-                        <img src="imagenes/foto 1.webp" alt="Foto 1" width="120" height="80" loading="lazy">
-                        <img src="imagenes/foto 2.webp" alt="Foto 2" width="120" height="80" loading="lazy">
-                        <img src="imagenes/foto 3.webp" alt="Foto 3" width="120" height="80" loading="lazy">
-                        <img src="imagenes/foto 4.webp" alt="Foto 4" width="120" height="80" loading="lazy">
-                        <img src="imagenes/foto 5.webp" alt="Foto 5" width="120" height="80" loading="lazy">
+                        <img src="../imagenes/foto_1pozole.webp" alt="Foto 1" width="120" height="80" loading="lazy">
+                        <img src="../imagenes/foto_2pozole.webp" alt="Foto 2" width="120" height="80" loading="lazy">
+                        <img src="../imagenes/foto_3pozole.webp" alt="Foto 3" width="120" height="80" loading="lazy">
+                        <img src="../imagenes/foto_4pozole.webp" alt="Foto 4" width="120" height="80" loading="lazy">
+    
                     </div>
                 </div>    
             </section>
         </main>
         <br><br><br>
 
-        <div class="contenedor-opiniones">
-            <div class="seccion-calificaciones">
-                <h2>⭐ Calificación de la receta</h2>
-            </div>
-            
+        <div class="contenedorInferior">
 
-            <div class="tarjeta-comentario">
-              <h3>👤 Mariana T. ⭐⭐⭐⭐⭐</h3>
+            <div class="contenedor-opiniones">
+                <div class="seccion-calificaciones">
+                    <h2>⭐ Calificación de la receta</h2>
+                </div>
+                
+
+                <div class="tarjeta-comentario">
+                    <h3>👤 Mariana T. ⭐⭐⭐⭐⭐</h3>
                     <p>Es la primera vez que hago pozole y la explicación paso a paso es súper clara. El toque de sofreír la salsa hace toda la diferencia.</p>
                     <a href="#" class="link-responder">Responder</a>  
-            </div>
-            <br>
-            <div class="tarjeta-comentario">
-            <h3>👤 Roberto V. ⭐⭐⭐⭐</h3>
+                </div>
+                <br>
+                <div class="tarjeta-comentario">
+                    <h3>👤 Roberto V. ⭐⭐⭐⭐</h3>
                     <p>Muy buena receta. Yo lo dejé un rato más a fuego lento en el último paso para que el caldo agarrara más sabor y quedó perfecto para la cena familiar.</p>
                     <a href="#" class="link-responder">Responder</a>
+                </div>
             </div>
-        </div>
-        <br><br>
-        <div class="seccion-formulario">
-            <h2>🍽️ Comparte tu opinión</h2>
-            <p>Cuéntanos qué te pareció esta receta. Tu correo electrónico permanecerá privado y los campos marcados con * son obligatorios.</p>
             
-            <div class="grupo-titulos">
-                <h3>Tu opinión:</h3>
-                <div class="card-resena">
-                    <textarea id="resena" placeholder="Escribe tu reseña aquí..."></textarea>
+            <br><br>
+            
+            <div class="seccion-formulario">
+                <h2>🍽️ Comparte tu opinión</h2>
+                <p>Cuéntanos qué te pareció esta receta. Tu correo electrónico permanecerá privado y los campos marcados con * son obligatorios.</p>
+                
+                <div class="grupo-titulos">
+                    <h3>Tu opinión:</h3>
+                    <div class="card-resena">
+                        <textarea id="resena" placeholder="Escribe tu reseña aquí..."></textarea>
+                    </div>
                 </div>
-            </div>
 
-            <div class="grupo-titulos">
-                <h3>Nombre *</h3>
-                <div class="card-nombre">
-                    <input type="text" id="nombre" placeholder="Escribe tu nombre...">
+                <div class="grupo-titulos">
+                    <h3>Nombre *</h3>
+                    <div class="card-nombre">
+                        <input type="text" id="nombre" placeholder="Escribe tu nombre...">
+                    </div>
+                </div> 
+
+                <div class="grupo-titulos">
+                    <h3>Correo electrónico *</h3>
+                    <div class="fila-validar">
+                        <div class="card-escribir">
+                            <input type="text" id="correo" placeholder="Escribe tu correo...">
+                        </div>
+                        <button onclick="validarCorreo()">Validar Correo</button>
+                    </div>
+                    <p id="m_correo"></p>
                 </div>
+
+                <button class="btn-publicar">Publicar Comentario</button>  
             </div> 
-
-        <div class="grupo-titulos">
-            <h3>Correo electrónico *</h3>
-            <div class="fila-validar">
-                <div class="card-escribir">
-                    <input type="text" id="correo" placeholder="Escribe tu correo...">
-                </div>
-                <button onclick="validarCorreo()">Validar Correo</button>
+            <br>
+             <div class="caja-volver">
+                <a href="../index.php" class="enlace-volver"><button class="volver">Volver</button></a>
             </div>
-            <p id="m_correo"></p>
-        </div>
-        </div> 
 
-       
-        <button class="btn-publicar">Publicar Comentario</button>  
-        <br> <br>
-        <div>
-            <a href="../index.php"><button class="volver">Volver</button></a>
-        </div>      
-
-        <div class="footer">
+        </div> <div class="footer">
             <hr>
             <p>© 2026 WikiBrock</p>
             <hr>
         </div>
 
-        
         <script src="JS/detalles.js"></script>
         <script>
-            cargarSustituciones("tacos-al-pastor");
         </script>
     </body>
 </html>

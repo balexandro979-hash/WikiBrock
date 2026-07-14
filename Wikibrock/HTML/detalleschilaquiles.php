@@ -30,7 +30,7 @@
         <main class="contenedorPrincipal">
             <aside class="columnaIzquierda">
                 <div class="tarjetaTacos">
-                    <img src="img/chilaquiles-verdes.jpg" alt="Plato con Tacos al Pastor tradicionales" width="1200" height="800" loading="lazy">
+                    <img src="../imagenes/chilaquiles_verdes.webp" alt="Plato con Tacos al Pastor tradicionales" width="1200" height="800" loading="lazy">
                     <h4>⏱ 25 min | ⭐ Amateur | 💰 Muy Económico</h4>
                 </div>
 
@@ -98,83 +98,82 @@
              <div class="caja-carrusel">
             <h3>ASÍ LE QUEDÓ A LA COMUNIDAD</h3>
             <div class="fotos-comunidad">
-                <img src="img/foto 1.webp" alt="Foto 1" width="120" height="80" loading="lazy">
-                <img src="img/foto 2.webp" alt="Foto 2" width="120" height="80" loading="lazy">
-                <img src="img/foto 3.webp" alt="Foto 3" width="120" height="80" loading="lazy">
-                <img src="img/foto 4.webp" alt="Foto 4" width="120" height="80" loading="lazy">
-                <img src="img/foto 5.webp" alt="Foto 5" width="120" height="80" loading="lazy">
+                <img src="../imagenes/foto_1chilaquiles.webp" alt="Foto 1" width="120" height="80" loading="lazy">
+                <img src="../imagenes/foto_2chilaquiles.webp" alt="Foto 2" width="120" height="80" loading="lazy">
+                <img src="../imagenes/foto_3chilaquiles.webp" alt="Foto 3" width="120" height="80" loading="lazy">
+                <img src="../imagenes/foto_4chilaquiles.webp" alt="Foto 4" width="120" height="80" loading="lazy">
+             
             </div>
         </div>
             </section>
         </main>
         <br><br><br>
 
-        <div class="contenedor-opiniones">
-            <div class="seccion-calificaciones">
-                <h2>⭐ Calificación de la receta</h2>
-            </div>
-            
+        <div class="contenedorInferior">
 
-            <div class="tarjeta-comentario">
-              <h3>👤 Esteban M. ⭐⭐⭐⭐</h3>
+            <div class="contenedor-opiniones">
+                <div class="seccion-calificaciones">
+                    <h2>⭐ Calificación de la receta</h2>
+                </div>
+                
+                <div class="tarjeta-comentario">
+                    <h3>👤 Esteban M. ⭐⭐⭐⭐</h3>
                     <p>¡Uff! El tip de dejar secar las tortillas la noche anterior cambió las reglas del juego, quedaron bien crujientes y la salsa en su punto de picor.</p>
                     <a href="#" class="link-responder">Responder</a>  
-            </div>
-            <br>
-            <div class="tarjeta-comentario">
-            <h3>👤  Carlos A.⭐⭐⭐⭐⭐</h3>
+                </div>
+                <br>
+                <div class="tarjeta-comentario">
+                    <h3>👤  Carlos A.⭐⭐⭐⭐⭐</h3>
                     <p>La receta definitiva para revivir un domingo por la mañana. Le agregué un huevo estrellado encima y quedó espectacular.</p>
                     <a href="#" class="link-responder">Responder</a>
-            </div>
-        </div>
-        <br><br>
-        <div class="seccion-formulario">
-            <h2>🍽️ Comparte tu opinión</h2>
-            <p>Cuéntanos qué te pareció esta receta. Tu correo electrónico permanecerá privado y los campos marcados con * son obligatorios.</p>
-            
-            <div class="grupo-titulos">
-                <h3>Tu opinión:</h3>
-                <div class="card-resena">
-                    <textarea id="resena" placeholder="Escribe tu reseña aquí..."></textarea>
                 </div>
             </div>
 
-            <div class="grupo-titulos">
-                <h3>Nombre *</h3>
-                <div class="card-nombre">
-                    <input type="text" id="nombre" placeholder="Escribe tu nombre...">
+            <br><br>
+
+            <div class="seccion-formulario">
+                <h2>🍽️ Comparte tu opinión</h2>
+                <p>Cuéntanos qué te pareció esta receta. Tu correo electrónico permanecerá privado y los campos marcados con * son obligatorios.</p>
+                
+                <div class="grupo-titulos">
+                    <h3>Tu opinión:</h3>
+                    <div class="card-resena">
+                        <textarea id="resena" placeholder="Escribe tu reseña aquí..."></textarea>
+                    </div>
                 </div>
+
+                <div class="grupo-titulos">
+                    <h3>Nombre *</h3>
+                    <div class="card-nombre">
+                        <input type="text" id="nombre" placeholder="Escribe tu nombre...">
+                    </div>
+                </div> 
+
+                <div class="grupo-titulos">
+                    <h3>Correo electrónico *</h3>
+                    <div class="fila-validar">
+                        <div class="card-escribir">
+                            <input type="text" id="correo" placeholder="Escribe tu correo...">
+                        </div>
+                        <button onclick="validarCorreo()">Validar Correo</button>
+                    </div>
+                    <p id="m_correo"></p>
+                </div>
+
+                <button class="btn-publicar">Publicar Comentario</button> 
             </div> 
 
-        <div class="grupo-titulos">
-            <h3>Correo electrónico *</h3>
-            <div class="fila-validar">
-                <div class="card-escribir">
-                    <input type="text" id="correo" placeholder="Escribe tu correo...">
-                </div>
-                <button onclick="validarCorreo()">Validar Correo</button>
-            </div>
-            <p id="m_correo"></p>
-        </div>
-        </div> 
+            <br>
+             <div class="caja-volver">
+                <a href="../index.php" class="enlace-volver"><button class="volver">Volver</button></a>
+            </div>     
 
-       
-        <button class="btn-publicar">Publicar Comentario</button> 
-        <br><br>
-        <div>
-            <a href="../index.php"><button class="volver">Volver</button></a>
-        </div>       
-
-        <div class="footer">
+        </div> <div class="footer">
             <hr>
             <p>© 2026 WikiBrock</p>
             <hr>
         </div>
 
-        
-        <script src="JS/detalles.js"></script>
-        <script>
-            cargarSustituciones("chilaquiles");
-        </script>
+        <script src="../JS/detalles.js"></script>
     </body>
 </html>

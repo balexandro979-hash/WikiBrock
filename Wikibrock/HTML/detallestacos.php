@@ -30,7 +30,7 @@
         <main class="contenedorPrincipal">
             <aside class="columnaIzquierda">
                 <div class="tarjetaTacos">
-                    <img src="img/tacos-al-pastor.jpg" alt="Plato con Tacos al Pastor tradicionales" width="1200" height="800" loading="lazy">
+                    <img src="../imagenes/tacos_al_pastor.webp" alt="Plato con Tacos al Pastor tradicionales" width="1200" height="800" loading="lazy">
                     <h4>⏱ 35 min | ⭐ Amateur | 💰 Económico</h4>
                 </div>
 
@@ -91,83 +91,82 @@
                 <div class="caja-carrusel">
                     <h3>ASÍ LE QUEDÓ A LA COMUNIDAD</h3>
                     <div class="fotos-comunidad">
-                        <img src="imagenes/foto 1.webp" alt="Foto 1" width="120" height="80" loading="lazy">
-                        <img src="imagenes/foto 2.webp" alt="Foto 2" width="120" height="80" loading="lazy">
-                        <img src="imagenes/foto 3.webp" alt="Foto 3" width="120" height="80" loading="lazy">
-                        <img src="imagenes/foto 4.webp" alt="Foto 4" width="120" height="80" loading="lazy">
-                        <img src="imagenes/foto 5.webp" alt="Foto 5" width="120" height="80" loading="lazy">
+                        <img src="../imagenes/foto_1tacos.webp" alt="Foto 1" width="120" height="80" loading="lazy">
+                        <img src="../imagenes/foto_2tacos.webp" alt="Foto 2" width="120" height="80" loading="lazy">
+                        <img src="../imagenes/foto_3tacos.webp" alt="Foto 3" width="120" height="80" loading="lazy">
+                        <img src="../imagenes/foto_4tacos.webp" alt="Foto 4" width="120" height="80" loading="lazy">
                     </div>
-                </div>    
+                </div> 
+                  
             </section>
-        </main>
+     </main>
         <br><br><br>
 
-        <div class="contenedor-opiniones">
-            <div class="seccion-calificaciones">
-                <h2>⭐ Calificación de la receta</h2>
-            </div>
-            
+        <div class="contenedorInferior">
 
-            <div class="tarjeta-comentario">
-              <h3>👤 Carlos R. ⭐⭐⭐⭐</h3>
+            <div class="contenedor-opiniones">
+                <div class="seccion-calificaciones">
+                    <h2>⭐ Calificación de la receta</h2>
+                </div>
+                
+                <div class="tarjeta-comentario">
+                    <h3>👤 Carlos R. ⭐⭐⭐⭐</h3>
                     <p>Muy fácil de seguir. No encontré chile pasilla y usé la alternativa recomendada. El sabor quedó bastante bueno.</p>
                     <a href="#" class="link-responder">Responder</a>  
-            </div>
-            <br>
-            <div class="tarjeta-comentario">
-            <h3>👤 Sofia M. ⭐⭐⭐⭐⭐</h3>
+                </div>
+                <br>
+                <div class="tarjeta-comentario">
+                    <h3>👤 Sofia M. ⭐⭐⭐⭐⭐</h3>
                     <p>La preparé para una comida familiar y quedó muy rica. Me gustó que la receta explicara cada paso.</p>
                     <a href="#" class="link-responder">Responder</a>
+                </div>
             </div>
-        </div>
-        <br><br>
-        <div class="seccion-formulario">
-            <h2>🍽️ Comparte tu opinión</h2>
-            <p>Cuéntanos qué te pareció esta receta. Tu correo electrónico permanecerá privado y los campos marcados con * son obligatorios.</p>
             
-            <div class="grupo-titulos">
-                <h3>Tu opinión:</h3>
-                <div class="card-resena">
-                    <textarea id="resena" placeholder="Escribe tu reseña aquí..."></textarea>
+            <br><br>
+            
+            <div class="seccion-formulario">
+                <h2>🍽️ Comparte tu opinión</h2>
+                <p>Cuéntanos qué te pareció esta receta. Tu correo electrónico permanecerá privado y los campos marcados con * son obligatorios.</p>
+                
+                <div class="grupo-titulos">
+                    <h3>Tu opinión:</h3>
+                    <div class="card-resena">
+                        <textarea id="resena" placeholder="Escribe tu reseña aquí..."></textarea>
+                    </div>
                 </div>
-            </div>
 
-            <div class="grupo-titulos">
-                <h3>Nombre *</h3>
-                <div class="card-nombre">
-                    <input type="text" id="nombre" placeholder="Escribe tu nombre...">
+                <div class="grupo-titulos">
+                    <h3>Nombre *</h3>
+                    <div class="card-nombre">
+                        <input type="text" id="nombre" placeholder="Escribe tu nombre...">
+                    </div>
+                </div> 
+
+                <div class="grupo-titulos">
+                    <h3>Correo electrónico *</h3>
+                    <div class="fila-validar">
+                        <div class="card-escribir">
+                            <input type="text" id="correo" placeholder="Escribe tu correo...">
+                        </div>
+                        <button onclick="validarCorreo()">Validar Correo</button>
+                    </div>
+                    <p id="m_correo"></p>
                 </div>
+
+                <button class="btn-publicar">Publicar Comentario</button>  
             </div> 
 
-        <div class="grupo-titulos">
-            <h3>Correo electrónico *</h3>
-            <div class="fila-validar">
-                <div class="card-escribir">
-                    <input type="text" id="correo" placeholder="Escribe tu correo...">
-                </div>
-                <button onclick="validarCorreo()">Validar Correo</button>
+            <br>
+            <div class="caja-volver">
+                <a href="../index.php" class="enlace-volver"><button class="volver">Volver</button></a>
             </div>
-            <p id="m_correo"></p>
-        </div>
-        </div> 
 
-       
-        <button class="btn-publicar">Publicar Comentario</button>  
-        <br> <br>
-        <div>
-            <a href="../index.php"><button class="volver">Volver</button></a>
-        </div>      
-
-        <div class="footer">
+        </div> <div class="footer">
             <hr>
             <p>© 2026 WikiBrock</p>
             <hr>
         </div>
-
         
-        <script src="JS/detalles.js"></script>
-        <script>
-            cargarSustituciones("tacos-al-pastor");
-        </script>
+        <script src="../JS/detalles.js"></script>
     </body>
 </html>
